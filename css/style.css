@@ -1,0 +1,33 @@
+body {
+  min-width: 1190px;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url(../fonts/Montserrat-Bold.woff);
+}
+/* !!! Добавить font-face для остальных шрифтов */
+
+.container {
+  width: 1170px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.logo {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  /* !!! font-stretch: semi-condensed; Исправить на transform*/
+  line-height: 40px;
+  margin: 0;
+}
