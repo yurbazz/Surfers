@@ -1,5 +1,6 @@
 body {
   min-width: 1190px;
+  font-size: 16px;
 }
 
 @font-face {
@@ -20,14 +21,72 @@ body {
   margin: 0 auto;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* HEADER */
 
+.header-top {
+  min-height: 40px;
+  margin-top: 30px;
+}
+
+.header-top-left {
+  min-width: 174px;
+  float: left;
+  transform: scalex(0.9);
+}
+
 .logo {
-  display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 34px;
-  /* !!! font-stretch: semi-condensed; Исправить на transform*/
+  text-decoration: none;
+  color: #000;
   line-height: 40px;
   margin: 0;
+}
+
+.logo:hover {
+  color: #000;
+}
+
+.header-top-right {
+  width: 870px;
+  float: right;
+}
+
+.main-navigation {
+  display: block;
+  min-width: 570px;
+  float: left;
+  list-style: none;
+  padding: 8px 9px 6px 9px;
+  margin: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  padding: 0 9px;
+  margin-left: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000;
+}
+
+.main-navigation a:hover {
+  color: #FFF;
+  background-color: rgb(0,179,255);
 }
