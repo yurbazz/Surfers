@@ -1,6 +1,8 @@
 body {
   min-width: 1190px;
   font-size: 16px;
+  margin: 0;
+  position: relative;
 }
 
 @font-face {
@@ -27,11 +29,18 @@ body {
   clear: both;
 }
 
-/* HEADER */
+/* <<<HEADER */
+
+.main-header {
+  background-image: url(../img/Surfing.jpg);
+  background-position: center;
+  background-color: #52a5c1;
+  min-height: 700px;
+}
 
 .header-top {
   min-height: 40px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .header-top-left {
@@ -88,5 +97,55 @@ body {
 
 .main-navigation a:hover {
   color: #FFF;
-  background-color: rgb(0,179,255);
+  background-color: #00b0ff;
 }
+
+.social-block {
+  width: 128px;
+  float: right;
+  font-size: 0;
+}
+
+.social-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #000;
+  background-image: url('../img/css_sprites.png');
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.social-btn:nth-child(1) {
+  background-position: -173px -70px;
+}
+
+.social-btn:nth-child(2) {
+  background-position: 0px -86px;
+}
+
+.social-btn:last-child {
+  background-position: -52px 0px;
+  margin-right: 0;
+}
+
+.social-btn:hover {
+  background-color: #FFF;
+}
+
+.social-btn:nth-child(1):hover {
+  background-position: -173px -34px;
+}
+
+.social-btn:nth-child(2):hover {
+  background-position: -40px -50px;
+}
+
+.social-btn:last-child:hover {
+  background-position: -2px -50px;
+}
+
+
+/* HEADER>>> */
