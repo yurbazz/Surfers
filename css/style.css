@@ -15,6 +15,12 @@ body {
   font-weight: bold;
   src: url(../fonts/Montserrat-Bold.woff);
 }
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  src: url(../fonts/PlayfairDisplay-Italic.woff);
+}
 /* !!! Добавить font-face для остальных шрифтов */
 
 .container {
@@ -33,14 +39,17 @@ body {
 
 .main-header {
   background-image: url(../img/Surfing.jpg);
-  background-position: center;
-  background-color: #52a5c1;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #73adc5;
   min-height: 700px;
+  margin-bottom: 512px;
 }
 
 .header-top {
   min-height: 40px;
   padding-top: 30px;
+  margin-bottom: 130px;
 }
 
 .header-top-left {
@@ -147,5 +156,35 @@ body {
   background-position: -2px -50px;
 }
 
+.header-bottom {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 145px;
+}
+
+.header-bottom h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.header-bottom p {
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFF;
+  margin: 0;
+}
+
+.surfboards-catalog {
+  position: absolute;
+  left: 50%;
+  margin-left: -515px;
+  width: 1030px;
+  min-height: 600px;
+  background-color: cyan;
+}
 
 /* HEADER>>> */
