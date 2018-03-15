@@ -184,7 +184,32 @@ body {
   margin-left: -515px;
   width: 1030px;
   min-height: 600px;
-  background-color: cyan;
+  background-color: #FFF;
+  box-sizing: border-box;
+  box-shadow: 0px -8px 30px rgba(0,0,0,0.34);
+}
+
+.surfboards-catalog .corner {
+  position: absolute;
+  z-index: 10;
+  border-top: 600px solid #00d2ff;
+  border-right: 500px solid transparent;
+}
+
+.surfboards-catalog .boards-text {
+  position: absolute;
+  transform: scale(1.06) rotate(-90deg);
+  z-index: 10;
+  right: -242px;
+  bottom: 233px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 127px;
+  line-height: 127px;
+  text-transform: uppercase;
+  text-indent: 100;
+  color: #000;
+  opacity: 0.03;
 }
 
 /* HEADER>>> */
