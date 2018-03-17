@@ -198,7 +198,7 @@ body {
 
 .surfboards-catalog .boards-text {
   position: absolute;
-  transform: scale(1.06) rotate(-90deg);
+  transform: scaley(1.06) rotate(-90deg);
   z-index: 10;
   right: -242px;
   bottom: 233px;
@@ -210,6 +210,70 @@ body {
   text-indent: 100;
   color: #000;
   opacity: 0.03;
+}
+
+.surfboards-catalog .boards-pics {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 20;
+  width: 500px;
+  height: 480px;
+} 
+
+.boards-pics input[type=radio] {
+  display: none;
+}
+
+.boards-pics .pic-control {
+  float: right;
+  margin-top: 100px;
+}
+
+.boards-pics label {
+  display: block;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 3px;
+  outline: 1px solid #ccc;
+  outline-offset: -1px;
+}
+
+.boards-pics label:nth-child(1) {
+  background: url(../img/thumb1.jpg) no-repeat;
+}
+
+.boards-pics label:nth-child(2) {
+  background: url(../img/thumb2.jpg) no-repeat;
+}
+
+.boards-pics label:nth-child(3) {
+  background: url(../img/thumb3.jpg) no-repeat;
+}
+
+.boards-pics label:nth-child(4) {
+  background: url(../img/thumb4.jpg) no-repeat;
+}
+
+#pic-1:checked ~ .pic-control label[for="pic-1"],
+#pic-2:checked ~ .pic-control label[for="pic-2"],
+#pic-3:checked ~ .pic-control label[for="pic-3"],
+#pic-4:checked ~ .pic-control label[for="pic-4"] {
+  outline: 3px solid #00b0ff;
+  outline-offset: -3px;
+}
+
+.boards-pics img {
+  display: none;
+}
+
+#pic-1:checked ~ .images img:nth-child(1),
+#pic-2:checked ~ .images img:nth-child(2),
+#pic-3:checked ~ .images img:nth-child(3),
+#pic-4:checked ~ .images img:nth-child(4) {
+  display: block;
+  float: left;
 }
 
 /* HEADER>>> */
