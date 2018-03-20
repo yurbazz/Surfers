@@ -276,4 +276,67 @@ body {
   float: left;
 }
 
+.surfboards-catalog .board-info {
+  position: absolute;
+  z-index: 20;
+  right: 0px;
+  width: 500px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.board-info h2 {
+  margin: 0;
+  margin-right: 90px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.board-info .raiting {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0px;
+}
+
+.board-info li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.board-info li[class*=star] {
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background: url(../img/css_sprites.png) -44px -132px no-repeat;
+}
+
+.board-info li[class=nostar] {
+  background: url(../img/css_sprites.png) -10px -132px no-repeat;
+}
+
+.board-info li:last-child {
+  font-size: 12px;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  color: #787878;
+}
+
+.board-info .counter {
+  display: block;
+  float: right;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  line-height: 38px;
+  color: #fff;
+  background-color: #000;
+  padding: 0 10px;
+}
+
 /* HEADER>>> */
