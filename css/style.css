@@ -21,6 +21,18 @@ body {
   font-style: italic;
   src: url(../fonts/PlayfairDisplay-Italic.woff);
 }
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-regular.woff);
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: bold;
+  src: url(../fonts/raleway-bold.woff);
+}
+
 /* !!! Добавить font-face для остальных шрифтов */
 
 .container {
@@ -296,10 +308,17 @@ body {
   line-height: 26px;
 }
 
+.board-info .top-block {
+  min-height: 38px;
+  margin-top: -14px;
+  margin-bottom: 28px;
+}
+
 .board-info .raiting {
   display: block;
   float: left;
   padding: 0;
+  padding-top: 12px;
   margin: 0;
   list-style: none;
   font-size: 0px;
@@ -323,7 +342,7 @@ body {
 
 .board-info li:last-child {
   font-size: 12px;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #787878;
 }
@@ -331,12 +350,71 @@ body {
 .board-info .counter {
   display: block;
   float: right;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 38px;
   color: #fff;
   background-color: #000;
   padding: 0 10px;
 }
+
+.board-info .board-about {
+  width: 395px;
+  min-height: 250px;
+}
+
+.board-about input {
+  display: none;
+}
+
+.board-about input:not(:checked) + .tab p {
+  display: none;
+}
+
+.board-about label {
+  cursor: pointer;
+}
+
+.board-about h3 {
+  float: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #a0a0a0;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 28px;
+  padding-bottom: 4px;
+}
+
+.board-about input:checked + .tab h3 {
+  border-bottom: 3px #00b0ff solid;
+  color: #000;
+}
+
+
+.board-about p {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878;
+  width: 100%;
+  margin: 22px 0 0 -100%;
+  padding-top: 26px;
+  border-top: 1px #d9d9d9 solid;
+}
+
+.board-info .price {
+  float: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 44px;
+  margin-right: 26px;
+}
+
 
 /* HEADER>>> */
